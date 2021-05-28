@@ -5,8 +5,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# implement random function, use Professor's code
-
 
 PLAYER_NAME = os.getenv("PLAYER_NAME")
 
@@ -18,6 +16,13 @@ computer_choice = random.choice(option)
 
 print("Welcome "+ PLAYER_NAME + " to Rock, Paper, Scissors, Shoot!")
 user_choice = input("Please choose one of the following: 'rock', 'paper', or 'scissors'.")
+
+if user_choice = "rock" or "paper" or "scissors":
+        print("Valid, keep going!")
+else:
+        print("Oops, that's not an option. Please try again.")
+        exit()
+print("This is the end of our game. Please play again.")
 
 print("USER CHOICE: ", user_choice)
 if user_choice == computer_choice:
